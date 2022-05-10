@@ -106,7 +106,7 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 1111px) {
     .card__title {
         text-align: left;
     }
@@ -158,12 +158,21 @@ body {
         display: flex;
         justify-content: space-between;
     }
-
+    
     .card__data * {
         margin: 0;
     }
-
+    
     .card__categories {
         margin: 6px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 1110px) {
+    .card {
+        width: 540px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
     }
 }
